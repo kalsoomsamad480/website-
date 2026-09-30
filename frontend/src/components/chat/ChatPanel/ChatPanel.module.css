@@ -1,0 +1,113 @@
+.panel {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-page);
+  transform-origin: bottom right;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--color-gold);
+  color: var(--color-purple);
+}
+
+.avatar svg {
+  width: 40px;
+  height: 40px;
+}
+
+.titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  font-size: 0.8125rem;
+  color: var(--text-on-dark-muted);
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.iconButton:hover {
+  background: var(--tint-white);
+}
+
+.iconButton:focus-visible {
+  outline-color: var(--color-gold);
+}
+
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.thinking {
+  align-self: flex-start;
+  padding: 10px 16px;
+  border-radius: 18px;
+  border-bottom-left-radius: 6px;
+  background: var(--color-white);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--text-muted);
+  animation: breathe 1.2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.quick {
+  padding: 0 var(--space-4) var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .panel {
+    inset: auto var(--space-5) calc(var(--space-5) + 72px) auto;
+    width: 400px;
+    height: min(640px, calc(100vh - var(--nav-height) - 120px));
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lift);
+    overflow: hidden;
+  }
+}

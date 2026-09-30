@@ -1,0 +1,33 @@
+.split {
+  display: grid;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.intro {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.passes {
+  display: grid;
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.passes > li {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .passes {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-9);
+  }
+}

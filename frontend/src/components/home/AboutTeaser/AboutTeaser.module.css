@@ -1,0 +1,53 @@
+.layout {
+  display: grid;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.images {
+  position: relative;
+  padding-bottom: 18%;
+}
+
+.tall {
+  width: 78%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* Offset second image overlapping the first */
+.small {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 52%;
+  aspect-ratio: 4 / 3;
+  border: 6px solid var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+}
+
+.text {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-5);
+}
+
+.text h2 {
+  max-width: 14ch;
+  text-wrap: balance;
+}
+
+.body {
+  max-width: 50ch;
+  color: var(--text-muted);
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-9);
+  }
+}

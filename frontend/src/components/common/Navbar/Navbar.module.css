@@ -1,0 +1,158 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: var(--z-nav);
+}
+
+/* Background fades in on scroll (opacity only, no layout change) */
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  backdrop-filter: saturate(1.4) blur(14px);
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+
+.scrolled::before {
+  opacity: 1;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  height: var(--nav-height);
+}
+
+/* Desktop links */
+.nav {
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-pill);
+  background: var(--tint-purple);
+}
+
+.linkText {
+  position: relative;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.link:hover .linkText,
+.activeText {
+  color: var(--color-purple);
+}
+
+.activeText {
+  font-weight: 700;
+}
+
+/* Right side */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.status {
+  display: none;
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-black);
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.iconButton:hover {
+  background: var(--tint-purple);
+  color: var(--color-purple);
+}
+
+.cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  background: var(--color-gold);
+  color: var(--color-black);
+  font-size: 0.6875rem;
+  font-weight: 800;
+}
+
+.account {
+  display: none;
+}
+
+.reserve {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .account {
+    display: grid;
+  }
+
+  .reserve {
+    display: inline-flex;
+    margin-left: var(--space-2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
+
+  .menuButton {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .status {
+    display: inline-flex;
+    margin-right: var(--space-2);
+  }
+}

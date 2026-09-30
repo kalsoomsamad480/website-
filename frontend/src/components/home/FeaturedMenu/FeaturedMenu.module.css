@@ -1,0 +1,20 @@
+.head {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.head > header {
+  margin-bottom: 0;
+}
+
+.link {
+  justify-self: start;
+}
+
+@media (min-width: 1024px) {
+  .head {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+}

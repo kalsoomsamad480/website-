@@ -1,0 +1,84 @@
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text);
+}
+
+h1,
+h2,
+.display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+}
+
+.display {
+  font-size: var(--fs-hero);
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+}
+
+/* Signature detail: one italic accent word per large headline */
+h1 em,
+h2 em,
+.display em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-blue);
+}
+
+.on-dark h1 em,
+.on-dark h2 em,
+.on-dark .display em {
+  color: var(--color-gold);
+}
+
+/* Blue fails contrast on gold, so accents turn purple there */
+.on-gold h1 em,
+.on-gold h2 em,
+.on-gold .display em {
+  color: var(--color-purple);
+}
+
+.on-gold .eyebrow {
+  color: var(--color-black);
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.on-dark .lead {
+  color: var(--text-on-dark-muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-purple);
+}
+
+.on-dark .eyebrow {
+  color: var(--color-gold);
+}

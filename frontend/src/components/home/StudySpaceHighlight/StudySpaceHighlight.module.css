@@ -1,0 +1,39 @@
+.band {
+  margin-inline: clamp(0px, 1.5vw, 24px);
+  border-radius: var(--radius-lg);
+}
+
+.layout {
+  display: grid;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.text {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.text h2 {
+  max-width: 12ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.visual {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-9);
+  }
+}

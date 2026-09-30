@@ -1,0 +1,16 @@
+.content {
+  display: grid;
+  gap: var(--space-6);
+  padding-bottom: var(--section-y);
+}
+
+/* Comfortable reading width for lists and the form */
+.content > * {
+  width: 100%;
+  max-width: 880px;
+}
+
+.tabs {
+  overflow-x: auto;
+  scrollbar-width: none;
+}

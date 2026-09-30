@@ -1,0 +1,11 @@
+.hero {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    aspect-ratio: 21 / 9;
+  }
+}

@@ -1,0 +1,44 @@
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.head,
+.foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.foot {
+  align-items: center;
+}
+
+.number {
+  font-weight: 800;
+}
+
+.date,
+.type {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+.items {
+  color: var(--text-muted);
+}
+
+.total {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: var(--color-purple);
+}

@@ -1,0 +1,59 @@
+.card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.link {
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+.label {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.7rem + 1vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.note {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+.arrow {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  color: var(--text-muted);
+}
+
+/* Needs attention: gold surface, black text (10.8:1) */
+.highlight {
+  background: var(--color-gold);
+}
+
+.highlight .label,
+.highlight .note,
+.highlight .arrow {
+  color: var(--color-black);
+}

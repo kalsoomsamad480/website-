@@ -1,0 +1,68 @@
+.region {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-5);
+  z-index: var(--z-toast);
+  width: min(calc(100% - 32px), 460px);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Sit above the chat button on phones */
+@media (max-width: 639px) {
+  .region {
+    bottom: 92px;
+  }
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--color-black);
+  color: var(--color-white);
+  box-shadow: var(--shadow-lift);
+  pointer-events: auto;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-small);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  color: var(--color-black);
+  font-size: var(--fs-small);
+  font-weight: 800;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.action:hover {
+  background: var(--color-gold);
+}
+
+.action:focus-visible {
+  outline-color: var(--color-gold);
+}

@@ -1,0 +1,90 @@
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: var(--space-4);
+}
+
+.muted {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+.inlineLink {
+  font-size: var(--fs-small);
+  font-weight: 800;
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.popularList {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.popularRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: 6px;
+}
+
+.popularName {
+  font-weight: 700;
+}
+
+.popularCount {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+.meter {
+  display: block;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-offwhite);
+  overflow: hidden;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-purple);
+  transform-origin: left center;
+}
+
+.bookingList {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.booking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-offwhite);
+}
+
+.bookingWhen {
+  font-weight: 700;
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .stats {
+    grid-column: 1 / -1;
+  }
+}

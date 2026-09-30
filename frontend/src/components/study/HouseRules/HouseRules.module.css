@@ -1,0 +1,26 @@
+.list {
+  display: grid;
+  gap: var(--space-3);
+  counter-reset: rule;
+}
+
+.rule {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  font-size: var(--fs-lead);
+  counter-increment: rule;
+}
+
+/* Plain typographic numbering: rules are read in order */
+.rule::before {
+  content: counter(rule, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-purple);
+}

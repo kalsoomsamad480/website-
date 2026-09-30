@@ -1,0 +1,106 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--color-black);
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: var(--color-purple);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.mark svg {
+  width: 38px;
+  height: 38px;
+}
+
+.genie {
+  fill: var(--color-gold);
+}
+
+.crease {
+  fill: none;
+  stroke: var(--color-purple);
+  stroke-width: 1.1;
+  stroke-linecap: round;
+}
+
+.arm {
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.turban,
+.cup {
+  fill: var(--color-white);
+}
+
+.line {
+  fill: none;
+  stroke: var(--color-white);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.logo:hover .mark {
+  transform: rotate(-6deg) scale(1.04);
+}
+
+.word {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.word em {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--color-purple);
+}
+
+/* On purple backgrounds */
+.light {
+  color: var(--color-white);
+}
+
+.light .mark {
+  background: var(--color-gold);
+}
+
+.light .genie {
+  fill: var(--color-purple);
+}
+
+.light .crease {
+  stroke: var(--color-gold);
+}
+
+.light .arm {
+  stroke: var(--color-purple);
+}
+
+.light .turban,
+.light .cup {
+  fill: var(--color-black);
+}
+
+.light .line {
+  stroke: var(--color-black);
+}
+
+.light .word em {
+  color: var(--color-gold);
+}

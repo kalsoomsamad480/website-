@@ -1,0 +1,78 @@
+.shell {
+  min-height: 100vh;
+  background: var(--bg-page);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 var(--gutter);
+}
+
+.menuButton {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--tint-white);
+  color: var(--color-white);
+}
+
+.sidebar {
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-drawer);
+  width: min(300px, 85vw);
+  background: var(--color-purple);
+  transform: translateX(-100%);
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.sidebarOpen {
+  transform: translateX(0);
+}
+
+.scrim {
+  position: fixed;
+  inset: 64px 0 0;
+  z-index: calc(var(--z-drawer) - 1);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.main {
+  width: 100%;
+  max-width: 1280px;
+  padding: var(--space-6) var(--gutter) var(--space-9);
+}
+
+.main:focus {
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .topbar,
+  .scrim {
+    display: none;
+  }
+
+  .sidebar {
+    top: 0;
+    width: 260px;
+    transform: none;
+    transition: none;
+  }
+
+  .main {
+    margin-left: 260px;
+    width: auto;
+    padding: var(--space-7) var(--space-7) var(--space-9);
+  }
+}

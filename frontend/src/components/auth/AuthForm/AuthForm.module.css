@@ -1,0 +1,72 @@
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.formError {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--tint-purple);
+  color: var(--color-purple);
+  font-weight: 700;
+}
+
+.switch {
+  margin-top: var(--space-2);
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.switch a {
+  font-weight: 800;
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.demo {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-offwhite);
+  font-size: var(--fs-small);
+}
+
+.demoTitle {
+  font-weight: 800;
+}
+
+.demoButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.demoButton {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  font-weight: 700;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.demoButton:hover {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.row {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,65 @@
+.grid {
+  columns: 1;
+  column-gap: clamp(12px, 1.6vw, 24px);
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: clamp(12px, 1.6vw, 24px);
+}
+
+.tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-gray);
+}
+
+/* Natural height keeps the masonry rhythm */
+.image {
+  height: auto;
+  transition:
+    transform 600ms var(--ease-out),
+    opacity var(--dur-slow) var(--ease-out);
+}
+
+.tile:hover .image {
+  transform: scale(1.04);
+}
+
+.hint {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-white);
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.tile:hover .hint,
+.tile:focus-visible .hint {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (min-width: 480px) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    columns: 3;
+  }
+}

@@ -1,0 +1,48 @@
+.wrap {
+  padding-block: var(--section-y) 0;
+}
+
+/* The previous section already provides the spacing */
+:global(.section) + .wrap {
+  padding-top: 0;
+}
+
+.band {
+  display: grid;
+  gap: var(--space-6);
+  padding: clamp(32px, 6vw, 80px);
+  border-radius: var(--radius-lg);
+}
+
+.text {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.title {
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+}
+
+.lead {
+  max-width: 46ch;
+  font-size: var(--fs-lead);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (min-width: 1024px) {
+  .band {
+    grid-template-columns: 1.3fr auto;
+    align-items: end;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,84 @@
+.card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.past {
+  opacity: 0.7;
+}
+
+.when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.date {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+}
+
+.time {
+  font-weight: 800;
+  color: var(--color-purple);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  color: var(--text-muted);
+}
+
+.notes {
+  flex-basis: 100%;
+  font-size: var(--fs-small);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.question {
+  font-weight: 700;
+}
+
+.link,
+.danger {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  font-weight: 700;
+}
+
+.link {
+  padding: 0;
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.danger {
+  background: var(--color-black);
+  color: var(--color-white);
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.danger:hover {
+  background: var(--color-purple);
+}
+
+.error {
+  font-weight: 700;
+  color: var(--color-purple);
+}

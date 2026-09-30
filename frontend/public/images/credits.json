@@ -1,0 +1,416 @@
+{
+  "menu/espresso.webp": {
+    "id": "xKS-1DP4g7A",
+    "alt": "clear glass cup on saucer",
+    "author": "Adi Goldstein",
+    "link": "https://unsplash.com/photos/xKS-1DP4g7A"
+  },
+  "menu/cardamom-latte.webp": {
+    "id": "Nw8wbiDE3gU",
+    "alt": "cafe latte",
+    "author": "Phil Desforges",
+    "link": "https://unsplash.com/photos/Nw8wbiDE3gU"
+  },
+  "menu/oat-cortado.webp": {
+    "id": "eSzClaMXNkk",
+    "alt": "clear drinking glass with brown liquid on brown wooden table",
+    "author": "Ben Moreland",
+    "link": "https://unsplash.com/photos/eSzClaMXNkk"
+  },
+  "menu/honey-cinnamon-cappuccino.webp": {
+    "id": "vgNU1ujE8Mk",
+    "alt": "white ceramic mug with brown liquid inside",
+    "author": "Nuttawut Anek",
+    "link": "https://unsplash.com/photos/vgNU1ujE8Mk"
+  },
+  "menu/single-origin-pour-over.webp": {
+    "id": "TYIzeCiZ_60",
+    "alt": "person filling glass container",
+    "author": "Karl Fredrickson",
+    "link": "https://unsplash.com/photos/TYIzeCiZ_60"
+  },
+  "menu/iced-spanish-latte.webp": {
+    "id": "vZOZJH_xkUk",
+    "alt": "clear glass filled ice coffee",
+    "author": "Nathan Dumlao",
+    "link": "https://unsplash.com/photos/vZOZJH_xkUk"
+  },
+  "menu/cold-brew.webp": {
+    "id": "HP4VFH70LMc",
+    "alt": "selective focus photography of milk pouring on shot glass",
+    "author": "Jorik Blom",
+    "link": "https://unsplash.com/photos/HP4VFH70LMc"
+  },
+  "menu/espresso-tonic.webp": {
+    "id": "3v0vppDjvMI",
+    "alt": "a cup of coffee sitting on top of a white plate",
+    "author": "Katt Galvan",
+    "link": "https://unsplash.com/photos/3v0vppDjvMI"
+  },
+  "menu/iced-matcha-latte.webp": {
+    "id": "_zwATV2KGTg",
+    "alt": "a green liquid in a glass with a wooden coaster",
+    "author": "Daniel Stiel",
+    "link": "https://unsplash.com/photos/_zwATV2KGTg"
+  },
+  "menu/mango-passion-cooler.webp": {
+    "id": "KlVIYmGVRQ8",
+    "alt": "a glass filled with a smoothie next to a mango",
+    "author": "Julia Zyablova",
+    "link": "https://unsplash.com/photos/KlVIYmGVRQ8"
+  },
+  "menu/hibiscus-lemonade.webp": {
+    "id": "sSnCZlEWN5E",
+    "alt": "red liquid with ice and plant",
+    "author": "Food Photographer | Jennifer Pallian",
+    "link": "https://unsplash.com/photos/sSnCZlEWN5E"
+  },
+  "menu/butter-croissant.webp": {
+    "id": "sqkXyyj4WdE",
+    "alt": "a bunch of croissants that are on a table",
+    "author": "Conor Brown",
+    "link": "https://unsplash.com/photos/sqkXyyj4WdE"
+  },
+  "menu/almond-croissant.webp": {
+    "id": "123wTsGP4LU",
+    "alt": "brown bread on blue and white checkered paper",
+    "author": "mahyar motebassem",
+    "link": "https://unsplash.com/photos/123wTsGP4LU"
+  },
+  "menu/cardamom-bun.webp": {
+    "id": "M5XHo05kO78",
+    "alt": "a white plate topped with pastries on top of a wooden table",
+    "author": "Chris Curry",
+    "link": "https://unsplash.com/photos/M5XHo05kO78"
+  },
+  "menu/blueberry-muffin.webp": {
+    "id": "5RQffqRkmWQ",
+    "alt": "brown cupcakes on white ceramic plate",
+    "author": "Joshua Flores",
+    "link": "https://unsplash.com/photos/5RQffqRkmWQ"
+  },
+  "menu/sourdough-toast-and-butter.webp": {
+    "id": "U9-0JVdjCVo",
+    "alt": "a stack of four pieces of bread sitting on top of a table",
+    "author": "Caramel",
+    "link": "https://unsplash.com/photos/U9-0JVdjCVo"
+  },
+  "menu/pistachio-danish.webp": {
+    "id": "fLFosDcrm28",
+    "alt": "brown bread on white table",
+    "author": "Nguyen Dang Hoang Nhu",
+    "link": "https://unsplash.com/photos/fLFosDcrm28"
+  },
+  "menu/avocado-toast.webp": {
+    "id": "w1NiWDrp68M",
+    "alt": "a sandwich with an egg and asparagus on it",
+    "author": "Imad 786",
+    "link": "https://unsplash.com/photos/w1NiWDrp68M"
+  },
+  "menu/cheese-toastie.webp": {
+    "id": "BiWb1Y8wpZk",
+    "alt": "Two grilled corn sandwiches on a white plate with three small dipping sauces",
+    "author": "Pixzolo Photography",
+    "link": "https://unsplash.com/photos/BiWb1Y8wpZk"
+  },
+  "menu/hummus-and-warm-pita.webp": {
+    "id": "yr-sW_x9aHk",
+    "alt": "a bowl of hummus with a garnish on top",
+    "author": "Ludovic Avice",
+    "link": "https://unsplash.com/photos/yr-sW_x9aHk"
+  },
+  "menu/loaded-masala-fries.webp": {
+    "id": "4Z9mJ2wIqLk",
+    "alt": "a person holding a tray of fries with cheese and other toppings",
+    "author": "Jay Gajjar",
+    "link": "https://unsplash.com/photos/4Z9mJ2wIqLk"
+  },
+  "menu/spiced-chickpea-chaat.webp": {
+    "id": "CIv6Xc9UOSE",
+    "alt": "a plate full of chickpeas and onions on a table",
+    "author": "Rashpal Singh",
+    "link": "https://unsplash.com/photos/CIv6Xc9UOSE"
+  },
+  "menu/chicken-spring-rolls.webp": {
+    "id": "1ugpo9WYPXs",
+    "alt": "a plate that has some food on it",
+    "author": "Budi Puspa Wijaya",
+    "link": "https://unsplash.com/photos/1ugpo9WYPXs"
+  },
+  "menu/chicken-tikka-rice-bowl.webp": {
+    "id": "XNzYljXGsw4",
+    "alt": "vegetable salad on black ceramic bowl",
+    "author": "Delaney Van",
+    "link": "https://unsplash.com/photos/XNzYljXGsw4"
+  },
+  "menu/grilled-chicken-pesto-sandwich.webp": {
+    "id": "mAQZ3X_8_l0",
+    "alt": "black plate with sandwich",
+    "author": "Eiliv Aceron",
+    "link": "https://unsplash.com/photos/mAQZ3X_8_l0"
+  },
+  "menu/creamy-mushroom-pasta.webp": {
+    "id": "wTBGTwHlf0c",
+    "alt": "pasta dish on white ceramic bowl",
+    "author": "Sama Hosseini",
+    "link": "https://unsplash.com/photos/wTBGTwHlf0c"
+  },
+  "menu/halloumi-grain-bowl.webp": {
+    "id": "BTWySWIhIN8",
+    "alt": "Kale salad with grilled halloumi and figs",
+    "author": "sheri silver",
+    "link": "https://unsplash.com/photos/BTWySWIhIN8"
+  },
+  "menu/alladin-smash-burger.webp": {
+    "id": "MNHQqLNEvow",
+    "alt": "a hamburger sitting on top of a wooden cutting board",
+    "author": "amirali mirhashemian",
+    "link": "https://unsplash.com/photos/MNHQqLNEvow"
+  },
+  "menu/big-breakfast-plate.webp": {
+    "id": "_Tci2omfmHI",
+    "alt": "a plate of food",
+    "author": "Ajeet Panesar",
+    "link": "https://unsplash.com/photos/_Tci2omfmHI"
+  },
+  "menu/basque-cheesecake.webp": {
+    "id": "s8_7AqkzCWY",
+    "alt": "sliced of cake on black plate",
+    "author": "Tina Guina",
+    "link": "https://unsplash.com/photos/s8_7AqkzCWY"
+  },
+  "menu/molten-chocolate-cake.webp": {
+    "id": "W1TOhhlbQpw",
+    "alt": "bundt chocolate cake",
+    "author": "Jordane Mathieu",
+    "link": "https://unsplash.com/photos/W1TOhhlbQpw"
+  },
+  "menu/classic-tiramisu.webp": {
+    "id": "4El3DUkQs2g",
+    "alt": "white and brown ceramic cake",
+    "author": "Marianna OLE",
+    "link": "https://unsplash.com/photos/4El3DUkQs2g"
+  },
+  "menu/pistachio-kunafa.webp": {
+    "id": "NzNFM69MMnI",
+    "alt": "A delicate pastry filled with chopped pistachios",
+    "author": "Shoeib Abolhassani",
+    "link": "https://unsplash.com/photos/NzNFM69MMnI"
+  },
+  "menu/lotus-cheesecake-jar.webp": {
+    "id": "snBGQdIP75M",
+    "alt": "a jar filled with cookies and cream on top of a table",
+    "author": "marya hussain",
+    "link": "https://unsplash.com/photos/snBGQdIP75M"
+  },
+  "menu/salted-caramel-brownie.webp": {
+    "id": "dKT6Q7q2UKs",
+    "alt": "chocolate cake with white icing on white ceramic plate",
+    "author": "Shivansh Sethi",
+    "link": "https://unsplash.com/photos/dKT6Q7q2UKs"
+  },
+  "gallery/latte-art.webp": {
+    "id": "3n3mPoGko8g",
+    "alt": "white ceramic cup with saucer on brown wooden table",
+    "author": "tabitha turner",
+    "link": "https://unsplash.com/photos/3n3mPoGko8g"
+  },
+  "gallery/quiet-room.webp": {
+    "id": "XaVW0jy1hd4",
+    "alt": "A large library with a lot of books on the shelves",
+    "author": "Brett Wharton",
+    "link": "https://unsplash.com/photos/XaVW0jy1hd4"
+  },
+  "gallery/croissants.webp": {
+    "id": "qZ5lPCPvdXE",
+    "alt": "close up photography of baked treats on tray",
+    "author": "Mink Mingle",
+    "link": "https://unsplash.com/photos/qZ5lPCPvdXE"
+  },
+  "gallery/barista-pour.webp": {
+    "id": "zKLRgmN_4vg",
+    "alt": "A man pouring a cup of coffee in a coffee shop",
+    "author": "Oguz Tombul",
+    "link": "https://unsplash.com/photos/zKLRgmN_4vg"
+  },
+  "gallery/window-seats.webp": {
+    "id": "14JQozSYEng",
+    "alt": "Two women working on laptops in a cafe",
+    "author": "Eugeniya Belova",
+    "link": "https://unsplash.com/photos/14JQozSYEng"
+  },
+  "gallery/cold-brew.webp": {
+    "id": "IhqDpFz7I8Q",
+    "alt": "clear drinking glass with coffee on top of white table",
+    "author": "Jarek Ceborski",
+    "link": "https://unsplash.com/photos/IhqDpFz7I8Q"
+  },
+  "gallery/study-group.webp": {
+    "id": "g1Kr4Ozfoac",
+    "alt": "three people sitting in front of table laughing together",
+    "author": "Brooke Cagle",
+    "link": "https://unsplash.com/photos/g1Kr4Ozfoac"
+  },
+  "gallery/cheesecake.webp": {
+    "id": "7yhu6txevQA",
+    "alt": "a piece of cheesecake on a plate next to a cup of coffee",
+    "author": "Orkun Orcan",
+    "link": "https://unsplash.com/photos/7yhu6txevQA"
+  },
+  "gallery/pour-over.webp": {
+    "id": "N3btvQ51dL0",
+    "alt": "person pouring black coffee in white ceramic mug placed on brown wooden table during daytime",
+    "author": "Nathan Dumlao",
+    "link": "https://unsplash.com/photos/N3btvQ51dL0"
+  },
+  "gallery/rice-bowl.webp": {
+    "id": "zhkhwGrqilw",
+    "alt": "corn and sliced tomato on white ceramic bowl",
+    "author": "David Foodphototasty",
+    "link": "https://unsplash.com/photos/zhkhwGrqilw"
+  },
+  "gallery/reading-corner.webp": {
+    "id": "xdSqdwnQP-I",
+    "alt": "a room with a lamp, a chair and a table",
+    "author": "eskoala",
+    "link": "https://unsplash.com/photos/xdSqdwnQP-I"
+  },
+  "gallery/counter.webp": {
+    "id": "go3DT3PpIw4",
+    "alt": "breads in display shelf",
+    "author": "Yeh Xintong",
+    "link": "https://unsplash.com/photos/go3DT3PpIw4"
+  },
+  "hero/hero.webp": {
+    "id": "_hnL_961xTk",
+    "alt": "white ceramic cup with saucer on brown wooden table",
+    "author": "Caleb",
+    "link": "https://unsplash.com/photos/_hnL_961xTk"
+  },
+  "about/story-1.webp": {
+    "id": "2z3MOB3kfJU",
+    "alt": "man pouring milk in coffee",
+    "author": "Nathan Dumlao",
+    "link": "https://unsplash.com/photos/2z3MOB3kfJU"
+  },
+  "about/story-2.webp": {
+    "id": "3qGa30vmP-k",
+    "alt": "an overhead view of a restaurant with wooden tables and chairs",
+    "author": "Aleksey Cherenkevich",
+    "link": "https://unsplash.com/photos/3qGa30vmP-k"
+  },
+  "study/hero.webp": {
+    "id": "dWYU3i-mqEo",
+    "alt": "selective focus photography of woman and man using MacBook Pro on table",
+    "author": "Annie Spratt",
+    "link": "https://unsplash.com/photos/dWYU3i-mqEo"
+  },
+  "study/quiet-room.webp": {
+    "id": "ObTfaF2hngw",
+    "alt": "brown table lamp on brown table",
+    "author": "Nicola Nuttall",
+    "link": "https://unsplash.com/photos/ObTfaF2hngw"
+  },
+  "study/focus-bar.webp": {
+    "id": "dbjk86SaRMU",
+    "alt": "clear glass cup on black and silver laptop computer",
+    "author": "Mohamad Ilham Fauzan",
+    "link": "https://unsplash.com/photos/dbjk86SaRMU"
+  },
+  "study/group-tables.webp": {
+    "id": "Rhl_IZQeRQY",
+    "alt": "man and woman sitting on chair in restaurant",
+    "author": "S O C I A L . C U T",
+    "link": "https://unsplash.com/photos/Rhl_IZQeRQY"
+  },
+  "team/team-1.webp": {
+    "id": "9fHMo1-5Io8",
+    "alt": "woman holding clear drinking glass",
+    "author": "Brooke Cagle",
+    "link": "https://unsplash.com/photos/9fHMo1-5Io8"
+  },
+  "team/team-2.webp": {
+    "id": "KchIV_GDy6U",
+    "alt": "grayscale photography of man wearing eyeglasses and crew-neck shirt",
+    "author": "Imansyah Muhamad Putera",
+    "link": "https://unsplash.com/photos/KchIV_GDy6U"
+  },
+  "team/team-3.webp": {
+    "id": "4X-zGgWgiy0",
+    "alt": "a man with a headband on smiling at the camera",
+    "author": "Levi Meir Clancy",
+    "link": "https://unsplash.com/photos/4X-zGgWgiy0"
+  },
+  "team/team-4.webp": {
+    "id": "K18DHDQeltA",
+    "alt": "woman in yellow crew neck t-shirt holding stainless steel pitcher",
+    "author": "Azhar khairi",
+    "link": "https://unsplash.com/photos/K18DHDQeltA"
+  },
+  "team/testimonial-1.webp": {
+    "id": "IF9TK5Uy-KI",
+    "alt": "woman in white crew neck shirt smiling",
+    "author": "Jake Nackos",
+    "link": "https://unsplash.com/photos/IF9TK5Uy-KI"
+  },
+  "team/testimonial-2.webp": {
+    "id": "DItYlc26zVI",
+    "alt": "smiling man with glasses and beard portrait",
+    "author": "Christian Buehner",
+    "link": "https://unsplash.com/photos/DItYlc26zVI"
+  },
+  "team/testimonial-3.webp": {
+    "id": "0fN7Fxv1eWA",
+    "alt": "grayscale photo of woman wearing necklace and top",
+    "author": "Rachel McDermott",
+    "link": "https://unsplash.com/photos/0fN7Fxv1eWA"
+  },
+  "team/testimonial-4.webp": {
+    "id": "iFgRcqHznqg",
+    "alt": "man wearing white V-neck shirt",
+    "author": "Joseph Gonzalez",
+    "link": "https://unsplash.com/photos/iFgRcqHznqg"
+  },
+  "team/testimonial-5.webp": {
+    "id": "Ll9YOG20UFI",
+    "alt": "A smiling woman with curly hair wearing a green t-shirt at a wooden table",
+    "author": "Nolan Manning",
+    "link": "https://unsplash.com/photos/Ll9YOG20UFI"
+  },
+  "team/testimonial-6.webp": {
+    "id": "rriAI0nhcbc",
+    "alt": "grayscale photography of man smiling",
+    "author": "Jack Finnigan",
+    "link": "https://unsplash.com/photos/rriAI0nhcbc"
+  },
+  "offers/study-breakfast.webp": {
+    "id": "Th_crcvH8xg",
+    "alt": "bread on brown ceramic plate",
+    "author": "montatip lilitsanong",
+    "link": "https://unsplash.com/photos/Th_crcvH8xg"
+  },
+  "offers/cold-brew-hour.webp": {
+    "id": "L-sm1B4L1Ns",
+    "alt": "glass cup filled with ice latte on tabletop",
+    "author": "Demi DeHerrera",
+    "link": "https://unsplash.com/photos/L-sm1B4L1Ns"
+  },
+  "offers/study-buddy.webp": {
+    "id": "K8XYGbw4Ahg",
+    "alt": "two people holding gray mugs at table",
+    "author": "Priscilla Du Preez 🇨🇦",
+    "link": "https://unsplash.com/photos/K8XYGbw4Ahg"
+  },
+  "contact/storefront.webp": {
+    "id": "UhoHx5-FPVQ",
+    "alt": "a person standing in front of a store",
+    "author": "Dns Omm",
+    "link": "https://unsplash.com/photos/UhoHx5-FPVQ"
+  },
+  "menu/flat-white.webp": {
+    "id": "zUNs99PGDg0",
+    "alt": "shallow focus photography of coffee late in mug on table",
+    "author": "Nathan Dumlao",
+    "link": "https://unsplash.com/photos/zUNs99PGDg0"
+  }
+}

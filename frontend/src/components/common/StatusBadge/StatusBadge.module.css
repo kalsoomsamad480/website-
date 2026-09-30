@@ -1,0 +1,40 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  background: var(--color-offwhite);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Waiting on the cafe */
+.pending {
+  background: var(--color-gold);
+}
+
+/* In progress */
+.preparing,
+.approved {
+  background: var(--tint-blue);
+}
+
+/* Needs the customer's attention (black on blue passes contrast) */
+.ready {
+  background: var(--color-blue);
+}
+
+.completed {
+  background: var(--tint-purple);
+  color: var(--color-purple);
+}
+
+.cancelled,
+.rejected {
+  background: var(--color-gray);
+}

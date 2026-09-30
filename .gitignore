@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Builds
+dist/
+build/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Local Claude Code settings
+.claude/settings.local.json

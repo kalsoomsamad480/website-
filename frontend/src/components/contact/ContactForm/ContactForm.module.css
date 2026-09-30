@@ -1,0 +1,39 @@
+.card {
+  padding: clamp(24px, 4vw, 48px);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.form,
+.success {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.success {
+  justify-items: start;
+}
+
+.title {
+  font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem);
+}
+
+.row {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.serverError {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--tint-purple);
+  color: var(--color-purple);
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

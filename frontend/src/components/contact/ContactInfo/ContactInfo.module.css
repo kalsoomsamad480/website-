@@ -1,0 +1,92 @@
+.info {
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Storefront photo stands in for a map in the demo */
+.map {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.mapCard {
+  position: absolute;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: var(--shadow-lift);
+}
+
+.address {
+  font-weight: 700;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.details > div {
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.details dt {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.details dd {
+  margin: 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.details a {
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--dur-fast) var(--ease-out);
+}
+
+.details a:hover {
+  text-decoration-color: currentColor;
+}
+
+.hours {
+  grid-column: 1 / -1;
+}
+
+.hours ul {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.hours li span:first-child {
+  font-weight: 500;
+  color: var(--text-muted);
+}

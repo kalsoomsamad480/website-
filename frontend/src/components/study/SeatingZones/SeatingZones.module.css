@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  gap: clamp(20px, 2.5vw, 32px);
+}
+
+.card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.seats {
+  position: absolute;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  font-size: var(--fs-small);
+  font-weight: 800;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

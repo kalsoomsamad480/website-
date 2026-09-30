@@ -1,0 +1,17 @@
+.groups {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.group,
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.groupTitle {
+  font-size: var(--fs-label);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}

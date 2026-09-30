@@ -1,0 +1,132 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  background: var(--color-gray);
+  border-color: var(--color-gray);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.icon {
+  flex-shrink: 0;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.button:hover .icon {
+  transform: translateX(3px);
+}
+
+/* Sizes */
+.sm {
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: var(--fs-small);
+}
+
+.md {
+  min-height: 50px;
+  padding: 0 24px;
+  font-size: 1rem;
+}
+
+.lg {
+  min-height: 58px;
+  padding: 0 30px;
+  font-size: 1.0625rem;
+}
+
+.full {
+  width: 100%;
+}
+
+/* Variants */
+.primary {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.primary:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+  box-shadow: var(--shadow-lift);
+}
+
+.accent {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.accent:hover {
+  background: var(--color-white);
+  box-shadow: var(--shadow-lift);
+}
+
+.ghost {
+  background: transparent;
+  border-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.ghost:hover {
+  border-color: var(--color-purple);
+  color: var(--color-purple);
+}
+
+.onDark {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.onDark:hover {
+  background: var(--color-gold);
+}
+
+/* On gold backgrounds */
+.ghostDark {
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.35);
+  color: var(--color-black);
+}
+
+.ghostDark:hover {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.ghostLight {
+  background: transparent;
+  border-color: var(--border-on-dark);
+  color: var(--color-white);
+}
+
+.ghostLight:hover {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+}

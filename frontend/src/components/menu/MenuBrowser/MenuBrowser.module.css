@@ -1,0 +1,44 @@
+.toolbar {
+  display: grid;
+  /* minmax(0, 1fr) stops the long tab row from widening the column; it scrolls instead */
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+/* Category tabs stay reachable while scrolling the grid */
+.tabs {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 10;
+  /* Full-bleed band; the tab scroller adds the side padding */
+  margin-inline: calc(var(--gutter) * -1);
+  padding-block: var(--space-2);
+  background: var(--bg-page);
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin: var(--space-6) 0 var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--fs-small);
+}
+
+.summary strong {
+  color: var(--color-black);
+}
+
+.reset {
+  min-height: 40px;
+  font-weight: 700;
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.reset:hover {
+  color: var(--color-black);
+}

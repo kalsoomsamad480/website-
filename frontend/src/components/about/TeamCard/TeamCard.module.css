@@ -1,0 +1,36 @@
+.card {
+  display: grid;
+  gap: 4px;
+}
+
+.photo {
+  aspect-ratio: 4 / 5;
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.photo img {
+  transition:
+    transform 600ms var(--ease-out),
+    opacity var(--dur-slow) var(--ease-out);
+}
+
+.card:hover .photo img {
+  transform: scale(1.04);
+}
+
+.name {
+  font-size: 1.125rem;
+}
+
+.role {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.note {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}

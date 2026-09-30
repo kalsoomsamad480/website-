@@ -1,0 +1,8 @@
+.wrap {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-5);
+  min-height: 70vh;
+  align-content: center;
+  padding-block: var(--space-9);
+}

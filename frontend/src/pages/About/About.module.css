@@ -1,0 +1,17 @@
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: clamp(20px, 2.5vw, 32px);
+}
+
+.features {
+  display: grid;
+  gap: var(--space-5);
+}
+
+@media (min-width: 1024px) {
+  .features {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: var(--space-9);
+  }
+}

@@ -1,0 +1,88 @@
+.figure {
+  margin: 0;
+}
+
+.chart {
+  position: relative;
+  container-type: inline-size;
+}
+
+/* The SVG scales down on phones; enlarge text in viewBox units so it stays about 11px on screen */
+@container (max-width: 420px) {
+  .axisText,
+  .valueText {
+    font-size: 19px;
+  }
+}
+
+.chart svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Recessive grid and axes */
+.grid {
+  stroke: var(--color-gray);
+  stroke-width: 1;
+  stroke-dasharray: none;
+}
+
+.baseline {
+  stroke: rgba(0, 0, 0, 0.35);
+  stroke-width: 1;
+}
+
+.axisText {
+  fill: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.valueText {
+  fill: var(--color-black);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.bar {
+  fill: var(--color-purple);
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.barDim {
+  opacity: 0.45;
+}
+
+.hit {
+  fill: transparent;
+}
+
+.barGroup {
+  cursor: default;
+  outline: none;
+}
+
+.barGroup:focus-visible .hit {
+  stroke: var(--focus-ring);
+  stroke-width: 2;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  display: grid;
+  gap: 2px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  transform: translate(-50%, -30%);
+  pointer-events: none;
+}
+
+.tooltip strong {
+  font-size: 0.9375rem;
+}

@@ -1,0 +1,49 @@
+.control {
+  display: inline-flex;
+  justify-self: start;
+  max-width: 100%;
+  gap: 4px;
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  box-shadow: inset 0 0 0 1.5px var(--color-gray);
+}
+
+.full {
+  display: flex;
+  width: 100%;
+}
+
+.full .option {
+  flex: 1;
+}
+
+.option {
+  position: relative;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.option:hover {
+  color: var(--color-purple);
+}
+
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-purple);
+}
+
+.label {
+  position: relative;
+}
+
+.active,
+.active:hover {
+  color: var(--color-white);
+}

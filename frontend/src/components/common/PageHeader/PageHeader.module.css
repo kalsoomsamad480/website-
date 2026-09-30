@@ -1,0 +1,34 @@
+.header {
+  display: grid;
+  gap: var(--space-6);
+  padding-top: clamp(40px, 6vw, 88px);
+  padding-bottom: clamp(40px, 5vw, 72px);
+}
+
+.titleBlock {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.title {
+  max-width: 14ch;
+  text-wrap: balance;
+}
+
+.side {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 46ch;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    grid-template-columns: 7fr 5fr;
+    align-items: end;
+    gap: var(--space-8);
+  }
+
+  .side {
+    padding-bottom: var(--space-3);
+  }
+}

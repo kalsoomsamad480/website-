@@ -1,0 +1,66 @@
+.scroller {
+  margin-inline: calc(var(--gutter) * -1);
+  padding: 4px var(--gutter) var(--space-2);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  display: flex;
+  gap: var(--space-2);
+  width: max-content;
+}
+
+.day {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  width: 76px;
+  padding: var(--space-3) 0;
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: inset 0 0 0 1.5px var(--color-gray);
+  scroll-snap-align: start;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.day:hover {
+  box-shadow: inset 0 0 0 1.5px var(--color-purple);
+  transform: translateY(-2px);
+}
+
+.weekday,
+.month {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.number {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.selected,
+.selected:hover {
+  background: var(--color-purple);
+  box-shadow: none;
+  color: var(--color-white);
+}
+
+.selected .weekday,
+.selected .month {
+  color: var(--text-on-dark-muted);
+}

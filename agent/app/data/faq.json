@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the Wi-Fi password?",
+    "keywords": ["wifi", "wi-fi", "password", "internet"],
+    "answer": "Our Wi-Fi is 300 Mbps fiber. The password is printed on every receipt, so just ask at the counter if you have not ordered yet."
+  },
+  {
+    "question": "Do you have plant-based milk?",
+    "keywords": ["oat", "almond", "soy", "vegan", "dairy", "lactose", "plant"],
+    "answer": "Yes. Oat milk is available for any coffee at no extra cost. The Oat Cortado and Iced Matcha Latte are made with oat milk by default."
+  },
+  {
+    "question": "Is there parking?",
+    "keywords": ["parking", "park", "car"],
+    "answer": "There is street parking on Garden Street and a public car park two minutes away on Market Road."
+  },
+  {
+    "question": "Are pets allowed?",
+    "keywords": ["dog", "dogs", "pet", "pets", "cat"],
+    "answer": "Well-behaved dogs are welcome at the Group Tables. The Quiet Room is kept pet free."
+  },
+  {
+    "question": "Can I bring children?",
+    "keywords": ["kids", "children", "child", "baby", "high chair"],
+    "answer": "Of course. We have high chairs at the Group Tables. The Quiet Room is for focused study, so we ask families to sit in the social area."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "keywords": ["pay", "payment", "cash", "card", "wallet", "credit"],
+    "answer": "We accept cash, cards, and mobile wallets. Online orders can be paid at the counter when you collect."
+  },
+  {
+    "question": "Can I host an event or book the whole space?",
+    "keywords": ["event", "private", "party", "book the whole", "workshop", "meetup", "club"],
+    "answer": "Yes, we host study groups, book clubs, and small workshops. Email hello@alladin.cafe with your date and group size and we will help you plan it."
+  },
+  {
+    "question": "Do you deliver?",
+    "keywords": ["deliver", "delivery", "uber", "foodpanda"],
+    "answer": "We do not deliver yet. You can order online for pickup and skip the queue."
+  },
+  {
+    "question": "Is the cafe wheelchair accessible?",
+    "keywords": ["wheelchair", "accessible", "accessibility", "step", "ramp"],
+    "answer": "Yes. The entrance is step free, and we have an accessible restroom on the ground floor."
+  },
+  {
+    "question": "Do you have gluten-free options?",
+    "keywords": ["gluten", "celiac", "coeliac", "allergy", "allergies", "nut", "nuts"],
+    "answer": "Some dishes have no wheat in their ingredients, like the Halloumi Grain Bowl. Our kitchen handles flour and nuts, so please tell the barista about any allergy and we will check every ingredient with you."
+  }
+]

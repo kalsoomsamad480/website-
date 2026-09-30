@@ -1,0 +1,9 @@
+.main {
+  /* A full screen tall so the footer never jumps while a lazy page loads (layout shift) */
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+}
+
+.main:focus {
+  outline: none;
+}

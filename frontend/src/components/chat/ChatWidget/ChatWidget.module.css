@@ -1,0 +1,36 @@
+.launcher {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: var(--shadow-lift);
+}
+
+.open {
+  background: var(--color-purple);
+  box-shadow: var(--shadow-brand);
+}
+
+/* On phones the panel is full screen with its own close button */
+@media (max-width: 639px) {
+  .launcher {
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+
+  .open {
+    display: none;
+  }
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+}

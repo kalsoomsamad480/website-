@@ -1,0 +1,22 @@
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--color-gray);
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+
+.loading {
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+/* Keep the gray block and alt text visible if the file is missing */
+.error {
+  opacity: 1;
+  color: var(--text-muted);
+  font-size: var(--fs-small);
+}

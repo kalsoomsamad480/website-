@@ -1,0 +1,65 @@
+.wrap {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  max-width: 760px;
+  padding-block: clamp(40px, 6vw, 88px) var(--section-y);
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-5);
+  width: 100%;
+  margin-top: var(--space-3);
+  padding: clamp(24px, 3vw, 36px);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.cardHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.meta {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.lines {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.lines li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.notes {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}

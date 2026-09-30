@@ -1,0 +1,33 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--color-black);
+}
+
+.open {
+  background: var(--tint-blue);
+}
+
+.open .icon {
+  color: var(--color-blue);
+}
+
+.closed {
+  background: var(--color-offwhite);
+}
+
+.light {
+  background: var(--tint-white);
+  color: var(--color-white);
+}
+
+.light .icon {
+  color: var(--color-gold);
+}

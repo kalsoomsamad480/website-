@@ -1,0 +1,77 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--gutter) var(--space-5);
+  background: rgba(0, 0, 0, 0.94);
+  color: var(--color-white);
+}
+
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.counter {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--text-on-dark-muted);
+}
+
+.stage {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.image:active {
+  cursor: grabbing;
+}
+
+.caption {
+  flex: 1;
+  max-width: 60ch;
+  text-align: center;
+  font-size: var(--fs-small);
+  color: var(--text-on-dark-muted);
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--color-white);
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.button:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.button:focus-visible {
+  outline-color: var(--color-gold);
+}
