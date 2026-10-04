@@ -19,4 +19,6 @@ async def health() -> dict:
     }
     if llm.config_error:
         body["llm_error"] = llm.config_error
+    if llm.last_error:
+        body["llm_last_error"] = llm.last_error
     return body

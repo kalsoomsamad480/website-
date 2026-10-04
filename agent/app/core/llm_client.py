@@ -93,6 +93,7 @@ class LLMClient:
         self._client = None
         self._http = None
         self.config_error = None
+        self.last_error = None  # most recent failed turn, shown in /health
         if not settings.llm_enabled:
             return
         try:
@@ -151,7 +152,8 @@ class LLMClient:
                 "tools": to_openai_tools(tools),
             },
         )
-        response.raise_for_status()
+        if response.is_error:  # include the provider's explanation, e.g. a wrong model name or quota
+            raise LLMUnavailable(f"{response.status_code} from provider: {response.text[:300]}")
         return from_openai_response(response.json())
 
 

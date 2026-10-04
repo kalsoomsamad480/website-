@@ -310,7 +310,9 @@ async def respond(session: Session, message: str) -> tuple[dict, str]:
     if llm.enabled:
         try:
             result, mode = await llm_reply(session, message), "llm"
-        except LLMUnavailable:
+            llm.last_error = None
+        except LLMUnavailable as error:
+            llm.last_error = str(error)[:300]
             result = None
     if result is None:
         try:
