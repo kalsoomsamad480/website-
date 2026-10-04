@@ -66,3 +66,19 @@ def test_base_url_without_scheme_disables_llm(monkeypatch):
     _with_settings(monkeypatch, llm_api_key="k", llm_base_url="example.test/v1")
     client = LLMClient()
     assert not client.enabled and client.config_error
+
+
+def test_openai_client_retries_busy_provider(monkeypatch):
+    _with_settings(monkeypatch, llm_api_key="k", llm_base_url="https://example.test/v1", llm_model="m")
+    real_sleep = asyncio.sleep
+    monkeypatch.setattr(llm_client.asyncio, "sleep", lambda _s: real_sleep(0))
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) < 3:
+            return httpx.Response(503, json={"error": {"message": "high demand"}})
+        return httpx.Response(200, json={"choices": [{"message": {"content": "Hi"}, "finish_reason": "stop"}]})
+
+    response = asyncio.run(LLMClient(transport=httpx.MockTransport(handler)).create("sys", [], TOOLS))
+    assert len(calls) == 3 and response.content[0].text == "Hi"

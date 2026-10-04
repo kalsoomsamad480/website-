@@ -5,6 +5,7 @@ OpenAI-compatible endpoint instead (free tiers: Google Gemini, Groq), converting
 responses so the agent always sees Anthropic-shaped data.
 """
 
+import asyncio
 import json
 import uuid
 from types import SimpleNamespace
@@ -16,6 +17,9 @@ from app.core.config import settings
 from app.utils.logger import get_logger
 
 log = get_logger(__name__)
+
+
+RETRY_STATUSES = {429, 500, 502, 503, 504}
 
 
 class LLMUnavailable(Exception):
@@ -143,15 +147,17 @@ class LLMClient:
             raise LLMUnavailable(str(error)) from error
 
     async def _create_openai(self, system: str, messages: list[dict], tools: list[dict]) -> SimpleNamespace:
-        response = await self._http.post(
-            "/chat/completions",
-            json={
-                "model": settings.llm_model,
-                "max_tokens": 700,
-                "messages": to_openai_messages(system, messages),
-                "tools": to_openai_tools(tools),
-            },
-        )
+        body = {
+            "model": settings.llm_model,
+            "max_tokens": 700,
+            "messages": to_openai_messages(system, messages),
+            "tools": to_openai_tools(tools),
+        }
+        for attempt in range(3):  # free tiers often return 429/503 during demand spikes
+            response = await self._http.post("/chat/completions", json=body)
+            if response.status_code not in RETRY_STATUSES or attempt == 2:
+                break
+            await asyncio.sleep(1 + attempt)
         if response.is_error:  # include the provider's explanation, e.g. a wrong model name or quota
             raise LLMUnavailable(f"{response.status_code} from provider: {response.text[:300]}")
         return from_openai_response(response.json())
