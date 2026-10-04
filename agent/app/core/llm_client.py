@@ -19,7 +19,7 @@ from app.utils.logger import get_logger
 log = get_logger(__name__)
 
 
-RETRY_STATUSES = {429, 500, 502, 503, 504}
+RETRY_STATUSES = {500, 502, 503, 504}  # not 429: retrying a quota error only spends more quota
 
 
 class LLMUnavailable(Exception):
@@ -153,7 +153,7 @@ class LLMClient:
             "messages": to_openai_messages(system, messages),
             "tools": to_openai_tools(tools),
         }
-        for attempt in range(3):  # free tiers often return 429/503 during demand spikes
+        for attempt in range(3):  # free tiers often return 503 during demand spikes
             response = await self._http.post("/chat/completions", json=body)
             if response.status_code not in RETRY_STATUSES or attempt == 2:
                 break
