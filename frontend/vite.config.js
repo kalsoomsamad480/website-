@@ -28,10 +28,16 @@ function seoFiles(siteUrl) {
   };
 }
 
+function siteOrigin(env) {
+  if (env.VERCEL_PROJECT_PRODUCTION_URL) return `https://${env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  return env.VITE_SITE_URL || 'http://localhost:5173';
+}
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    plugins: [react(), seoFiles(env.VITE_SITE_URL || 'http://localhost:5173')],
+    // On Vercel, the production domain is always the real one, so it wins over VITE_SITE_URL
+    plugins: [react(), seoFiles(siteOrigin(env))],
     server: {
       port: 5173,
       proxy: {

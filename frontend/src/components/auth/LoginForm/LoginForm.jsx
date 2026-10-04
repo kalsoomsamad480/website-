@@ -8,9 +8,9 @@ import useForm from '../../../hooks/useForm';
 import { compactErrors, isEmail } from '../../../utils/validators';
 import styles from '../AuthForm/AuthForm.module.css';
 
-// Seeded demo accounts (documented in the README). Hidden in production builds
-// unless VITE_SHOW_DEMO_ACCOUNTS=true, so real deployments never show passwords.
-const SHOW_DEMO = import.meta.env.DEV || import.meta.env.VITE_SHOW_DEMO_ACCOUNTS === 'true';
+// Seeded demo accounts (documented in the README). Shown only in local development,
+// so a deployed site never publishes passwords.
+const SHOW_DEMO = import.meta.env.DEV;
 const DEMO_ACCOUNTS = [
   { label: 'Customer', email: 'customer@alladin.cafe', password: 'Customer@123' },
   { label: 'Admin', email: 'admin@alladin.cafe', password: 'Admin@123' },

@@ -77,8 +77,7 @@ The sign-in page also has one-click buttons that fill in these accounts.
 | | `LLM_MODEL` | Default `claude-sonnet-5-5` |
 | | `BACKEND_URL` | The Node API the assistant reads from |
 | `frontend/.env` | `VITE_API_URL` | Default `/api/v1` (uses the dev proxy) |
-| | `VITE_SITE_URL` | Public site origin used in `sitemap.xml` and `robots.txt` at build time |
-| | `VITE_SHOW_DEMO_ACCOUNTS` | `true` shows the one-click demo accounts in production builds (they always show in `npm run dev`). Keep it `false` for a real deployment |
+| | `VITE_SITE_URL` | Public site origin used in `sitemap.xml` and `robots.txt` at build time (on Vercel the production domain is used automatically) |
 
 Generate secrets with `node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"`. Real `.env` files are git-ignored.
 
