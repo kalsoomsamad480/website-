@@ -92,9 +92,22 @@ class LLMClient:
     def __init__(self, transport: httpx.AsyncBaseTransport | None = None) -> None:
         self._client = None
         self._http = None
+        self.config_error = None
         if not settings.llm_enabled:
             return
+        try:
+            self._connect(transport)
+        except Exception as error:  # a bad key or URL must not take the whole agent down
+            self._client = self._http = None
+            self.config_error = f"LLM settings are invalid: {error}"
+            log.error(self.config_error)
+
+    def _connect(self, transport: httpx.AsyncBaseTransport | None) -> None:
+        if not settings.llm_api_key.isascii():
+            raise ValueError("LLM_API_KEY contains a hidden or non-ASCII character; paste it again.")
         if settings.llm_base_url:
+            if not settings.llm_base_url.startswith(("https://", "http://")):
+                raise ValueError("LLM_BASE_URL must start with https://")
             self._http = httpx.AsyncClient(
                 base_url=settings.llm_base_url,
                 timeout=30,

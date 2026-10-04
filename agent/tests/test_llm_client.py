@@ -50,3 +50,19 @@ def test_openai_client_returns_anthropic_shaped_blocks(monkeypatch):
     assert response.stop_reason == "tool_use"
     block = response.content[0]
     assert block.type == "tool_use" and block.name == "get_cafe_info" and block.input == {"topic": "hours"} and block.id
+
+
+def _with_settings(monkeypatch, **overrides):
+    monkeypatch.setattr(llm_client, "settings", llm_client.settings.__class__(**{**llm_client.settings.__dict__, **overrides}))
+
+
+def test_bad_key_disables_llm_instead_of_crashing(monkeypatch):
+    _with_settings(monkeypatch, llm_api_key="AIza\u2026abc", llm_base_url="https://example.test/v1")
+    client = LLMClient()
+    assert not client.enabled and "LLM_API_KEY" in client.config_error
+
+
+def test_base_url_without_scheme_disables_llm(monkeypatch):
+    _with_settings(monkeypatch, llm_api_key="k", llm_base_url="example.test/v1")
+    client = LLMClient()
+    assert not client.enabled and client.config_error

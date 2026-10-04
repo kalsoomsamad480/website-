@@ -10,10 +10,13 @@ router = APIRouter(tags=["health"])
 
 @router.get("/health")
 async def health() -> dict:
-    return {
+    body = {
         "status": "ok",
         "mode": "llm" if llm.enabled else "rules",
         "model": settings.llm_model if llm.enabled else None,
         "backend": "reachable" if await backend.is_healthy() else "unreachable",
         "active_sessions": len(sessions),
     }
+    if llm.config_error:
+        body["llm_error"] = llm.config_error
+    return body
